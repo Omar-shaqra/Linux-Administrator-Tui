@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Prompt for the group name
+GROUP=$(whiptail --cancel-button "Exit" --inputbox "Enter the group name:" 8 40 --title "Delete Group" 3>&1 1>&2 2>&3)
+if [ $? -ne 0 ]; then exit; fi
+
+# Check if the group exists
+if getent group "$GROUP" >/dev/null 2>&1; then
+    # Confirm deletion
+    if whiptail --title "Confirm Deletion" --yesno "Are you sure you want to delete the group $GROUP?" 8 40; then
+        groupdel "$GROUP"
+        whiptail --msgbox "Group $GROUP deleted." 8 40 --title "Delete Group"
+    else
+        whiptail --msgbox "Group $GROUP was not deleted." 8 40 --title "Deletion Cancelled"
+    fi
+else
+    whiptail --msgbox "Group $GROUP does not exist." 8 40 --title "Error"
+fi
+

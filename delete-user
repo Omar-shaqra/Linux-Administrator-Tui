@@ -1,0 +1,33 @@
+#!/bin/bash
+
+while true; do
+    USERNAME=$(whiptail --cancel-button "Exit" --inputbox "Enter the username to delete:" 8 39 "" --title "Delete User" 3>&1 1>&2 2>&3)
+    
+    if [ $? != 0 ]; then break; fi
+    
+    if id "$USERNAME" &>/dev/null; then
+        OPTION=$(whiptail --cancel-button "Exit" --radiolist "Select an option:" 15 60 4 \
+            "1" "Delete User Only" ON \
+            "2" "Delete User and Home Directory" OFF \
+            "3" "Cancel" OFF 3>&1 1>&2 2>&3)
+        
+        if [ $? != 0 ]; then break; fi
+
+        case $OPTION in
+            "1")
+                userdel "$USERNAME"
+                whiptail --msgbox "User $USERNAME has been deleted." 8 40 --title "User Deleted"
+                ;;
+            "2")
+                userdel -r "$USERNAME"
+                whiptail --msgbox "User $USERNAME and their home directory have been deleted." 8 50 --title "User and Home Directory Deleted"
+                ;;
+            "3")
+                break
+                ;;
+        esac
+    else
+        whiptail --msgbox "User $USERNAME does not exist." 8 40 --title "Error"
+    fi
+done
+
