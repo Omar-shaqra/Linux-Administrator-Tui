@@ -47,7 +47,7 @@ It is a collection of Bash scripts designed to simplify system administration ta
 
 ## Scripts Overview
 
-- **`main-menu.sh`**: Main menu script that provides a selection of options for user and group management.
+- **`bash.sh`**: Main menu script that provides a selection of options for user and group management.
 - **`add-user.sh`**: Script to add a new user.
 - **`modify-user.sh`**: Script to modify existing users (e.g., username, UID, password, etc.).
 - **`delete-user.sh`**: Script to delete a user.
