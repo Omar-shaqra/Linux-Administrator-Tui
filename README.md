@@ -1,4 +1,4 @@
-# Linux-Administration-Bash-Project'
+# Linux-Administration-Bash-Project
 
 ![CentOS-Stream-9-2024-08-18-03-01-37](https://github.com/user-attachments/assets/cb4eb10a-6b9a-4a9b-974d-714e2aa2783f)
 
