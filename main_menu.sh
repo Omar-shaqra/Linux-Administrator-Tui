@@ -23,54 +23,52 @@ while true; do
 
 case $Menu in
 	"Add User")
-	source ./add-user
+	source ./add_user
 	;;
 	############################################
 	"Modify User")
-	source ./modify-user
+	source ./modify_user
 	;;
 	############################################
 	"Delete User")
-	source ./delete-user
+	source ./delete_user
 	;;
 	############################################
 	"List Users")
-	source ./list-users
+	source ./list_users
 	;;
 	############################################
 	"Add Group")
-	source ./add-group
+	source ./add_group
 	;;
 	############################################
 	"Modify Group")
-	source ./modify-group
+	source ./modifay_group
 	;;
 	############################################
 	"Delete Group")
-	source ./delete-group
+	source ./delete_group
 	;;
 	############################################
 	"List Groups")
-	source ./list-groups
+	source ./list_groups
 	;;
 	############################################
 	"Disable User")
-	source ./disable-user
+	source ./disable_user
 	;;
 	############################################
 	"Enable User")
-	source ./enable-user
+	source ./enable_user
 	;;
 	############################################
 	"Change Password")
-	source ./change-pass
+	source ./change_pass
 	;;
 	############################################
 	"About")
 	about="\nThis is a bash scripting project for linux administration\n
-	Created by: Ziad Magdy Hanafy Eltity\n
-	Instructor: Romany Nageh\n
-	Information Technology Institute (ITI)"
+	Created by: Omar Gamal Eldin Shaqra\n"
 	whiptail --title "About" --msgbox "${about}" 20 78
 	;;
 	############################################
@@ -78,5 +76,3 @@ case $Menu in
 	 ;;
 esac
 done
-
-
