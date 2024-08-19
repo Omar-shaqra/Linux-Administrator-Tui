@@ -1,6 +1,6 @@
 # Linux-Administration-Bash-Project
 
-![CentOS-Stream-9-2024-08-18-03-01-37](https://github.com/user-attachments/assets/cb4eb10a-6b9a-4a9b-974d-714e2aa2783f)
+![Screenshot 2024-08-19 032053](https://github.com/user-attachments/assets/b4902406-1117-4e2d-8bd9-d602eb000254)
 
 It is a collection of Bash scripts designed to simplify system administration tasks via a user-friendly graphical interface. The suite utilizes `whiptail` to create dialog boxes for various user and group management operations, providing an intuitive way to manage users and groups on a Unix-like system.
 
