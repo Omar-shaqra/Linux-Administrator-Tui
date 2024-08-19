@@ -1,6 +1,6 @@
 # Linux-Administration-Bash-Project
 
-![Screenshot 2024-08-19 032053](https://github.com/user-attachments/assets/b4902406-1117-4e2d-8bd9-d602eb000254)
+![Screenshot 2024-08-19 032433](https://github.com/user-attachments/assets/5ecbb0db-f409-4125-8354-0afed6c0f2c0)
 
 It is a collection of Bash scripts designed to simplify system administration tasks via a user-friendly graphical interface. The suite utilizes `whiptail` to create dialog boxes for various user and group management operations, providing an intuitive way to manage users and groups on a Unix-like system.
 
